@@ -30,9 +30,6 @@ public class UserDataApp {
             String name = nameParts[1];
             String patronymic = nameParts[2];
 
-            // Валидация и обработка данных
-
-            // Создание файла
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(surname + ".txt"))) {
                 String userData = surname + " " + name + " " + patronymic + ", " + birthDate + ", " + phoneNumber + ", " + gender;
                 writer.write(userData);
